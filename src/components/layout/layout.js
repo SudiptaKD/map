@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import * as React from "react";
 import Header from "../header/header";
-import Map from "../map/map";
+import MapComponent from "../map/map";
 
 const Layout = () => {
   return (
@@ -10,7 +10,7 @@ const Layout = () => {
         <Header/>
       </Box>
       <Box sx={{padding:"5vw"}}>
-        <Map/>
+        <MapComponent/>
       </Box>
     </>
   );
