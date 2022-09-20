@@ -4,7 +4,7 @@ import * as React from "react";
 const Header = () => {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ minHeight:"10vh", backgroundColor:"#FFFFFF" }}>
         Header
       </Box>
     </>
