@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import * as React from "react";
 import Header from "../header/header";
-import MapComponent from "../map/map";
+import MapComponent from "../map/mapComponent";
 
 const Layout = () => {
   return (
