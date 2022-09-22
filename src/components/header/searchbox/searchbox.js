@@ -7,11 +7,13 @@ import SearchDropDown from "./searchDropDown";
 
 const CustomButton = styled(Button)(({ theme }) => ({
     boxShadow: 'none',
+    color: "grey",
     textTransform: 'none',
-    fontSize: 16,
-    padding: '3px 4px',
+    fontSize: 12,
+    padding: '0px',
     borderRadius :0,
-    BorderColor: "black"
+    borderColor: "#858585",
+    height:"40px"
 }));
 
 const CustomTextField = styled(TextField)({
@@ -30,11 +32,13 @@ const SearchBox = () => {
             <SearchDropDown/>
           </Grid>
           <Grid item xs={7} sx={{mt:1}}  >
-          <CustomTextField size="small" fullWidth id="outlined-basic" label="Search love questions and answers" variant="outlined" />
+            <CustomTextField size="small" fullWidth id="outlined-basic" 
+                    label="Search love questions and answers" variant="outlined" />
           </Grid>
           <Grid item xs={2} sx={{mt:1}}  >
-          <CustomButton size="large" variant="outlined" startIcon={<SearchOutlinedIcon fontSize='inherit' />}>
-      </CustomButton>
+            <CustomButton size="large" variant="outlined" 
+                ><SearchOutlinedIcon fontSize='large' />
+            </CustomButton>
           </Grid>
        </Grid>   
     </>

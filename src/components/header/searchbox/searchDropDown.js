@@ -27,7 +27,7 @@ export default function SearchDropDown() {
       options={options.sort((a, b) => -b.firstLetter.localeCompare(a.firstLetter))}
       groupBy={(option) => option.firstLetter}
       getOptionLabel={(option) => option.title}
-      sx={{ width: 140, height: 60 }}
+      sx={{ width: 150, height: 60 }}
       renderInput={(params) => <TextField {...params} label="Quick Access" />}
     />
   );

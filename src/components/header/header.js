@@ -4,6 +4,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import { Grid } from '@mui/material';
 import Box from "@mui/material/Box";
+import Stack from '@mui/material/Stack';
 import Image from 'next/image';
 import * as React from "react";
 import CButton from './button';
@@ -22,23 +23,13 @@ const Header = () => {
             <SearchBox/>
           </Grid>
           <Grid item xs={3}>
-            <Grid container spacing={4} sx={{paddingY:"12px"}} >
-              <Grid item xs={1}>
-                <ClassOutlinedIcon/>
-              </Grid>
-              <Grid item xs={1} >
-                <NotificationsNoneOutlinedIcon/>
-              </Grid>
-              <Grid item xs={1}>
-                <MarkEmailUnreadOutlinedIcon/>
-              </Grid>
-              <Grid item xs={1} >
-                < PermIdentityOutlinedIcon/>
-              </Grid>
-              <Grid item xs={6}>
-                <CButton/>
-              </Grid>
-            </Grid>
+            <Stack direction="row" spacing={2} mt={1.5}>
+              <ClassOutlinedIcon />
+              <NotificationsNoneOutlinedIcon/>
+              <MarkEmailUnreadOutlinedIcon/>
+              < PermIdentityOutlinedIcon/>
+              <CButton/>
+            </Stack>
           </Grid>
         </Grid>
       </Box>
