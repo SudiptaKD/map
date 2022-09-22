@@ -10,8 +10,8 @@ import MapCard from './card';
 const markerIcon = new L.Icon({
     iconUrl : "assets/icons/circle.png",
     iconSize: [15,15],
-    iconAnchor : [17,46],
-    popupAnchor : [0, -46]
+    iconAnchor : [7,20],
+    popupAnchor : [0, -36]
 })
 
 
