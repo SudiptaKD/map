@@ -3,9 +3,9 @@ import dynamic from 'next/dynamic';
 
 function MapComponent() {
   const Map = dynamic(
-    () => import('./map'), // replace '@components/map' with your component's location
+    () => import('./map'), 
     { 
-      loading: () => <p>A map is loading</p>,
+      loading: () => <p>Map is loading</p>,
       ssr: false // This line is important. It's what prevents server-side render
     }
   )
