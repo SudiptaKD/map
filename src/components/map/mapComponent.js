@@ -6,15 +6,13 @@ function MapComponent() {
     () => import('./map'), 
     { 
       loading: () => <p>Map is loading</p>,
-      ssr: false // This line is important. It's what prevents server-side render
+      ssr: false //
     }
   )
   return (
     <>
-      <Box sx = {{width:"full", height:"40vw"}} >
-       <div className="border-2 w-full h-full border-black  border-solid">
+      <Box sx = {{width:"full", height:"70vh",  border: '1px solid black'}} >
         <Map />
-       </div>
       </Box>
     </>
   )

@@ -21,7 +21,7 @@ const Map = () => {
 
 
   return (
-    <MapContainer center={[37.500000, -100.000000]} zoom={4} scrollWheelZoom={true} style={{height: 600, width: "100%"}}>
+    <MapContainer center={[37.500000, -100.000000]} zoom={4} scrollWheelZoom={true} style={{height: "100%", width: "100%"}}>
       <TileLayer
         attribution={attribution}
         url={url}
