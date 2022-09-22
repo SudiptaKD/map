@@ -2,7 +2,7 @@ import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import Box from "@mui/material/Box";
 import Stack from '@mui/material/Stack';
 import Image from 'next/image';
@@ -27,7 +27,12 @@ const Header = () => {
               <ClassOutlinedIcon />
               <NotificationsNoneOutlinedIcon/>
               <MarkEmailUnreadOutlinedIcon/>
-              < PermIdentityOutlinedIcon/>
+              <Stack spacing={-1} > 
+                <PermIdentityOutlinedIcon/> 
+                <Typography variant="caption" display="block" gutterBottom>
+                  Log In
+                </Typography>
+              </Stack>
               <CButton/>
             </Stack>
           </Grid>
