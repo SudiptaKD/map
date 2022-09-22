@@ -7,7 +7,10 @@ import MapCard from './card';
 
 
 const data = {
-  "image" : "/static/images/cards/contemplative-reptile.jpg"
+  "image" : "assets/images/11.jpg",
+  "name" : "Dodge City",
+  "location" : "Colorado",
+  "visited" : "25k"
 }
 
 const markerIcon = new L.Icon({
@@ -21,8 +24,6 @@ const markerIcon = new L.Icon({
 const Map = () => {
    const url = "https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=FrNKAOr2JOf765QWicWE"
    const attribution ='&copy; <a href="https://www.maptiler.com/">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-
-
 
 
   return (
