@@ -3,15 +3,9 @@ import { MapContainer, Marker, TileLayer } from 'react-leaflet';
 import { StyledPop } from './styledPopUp';
 
 import L from "leaflet";
+import locations from "../data/locations.json";
 import MapCard from './card';
 
-
-const data = {
-  "image" : "assets/images/11.jpg",
-  "name" : "Dodge City",
-  "location" : "Colorado",
-  "visited" : "25k"
-}
 
 const markerIcon = new L.Icon({
     iconUrl : "assets/icons/circle.png",
@@ -32,11 +26,14 @@ const Map = () => {
         attribution={attribution}
         url={url}
       />
-      <Marker position={[37.500000, -100.000000]} icon ={markerIcon}>
-        <StyledPop >
-          <MapCard data={data} />
-        </StyledPop>
-      </Marker>
+      {locations.map((location, idx)=> 
+          <Marker position={[location.lat, location.lng]} key={idx} icon ={markerIcon}>
+            <StyledPop >
+              <MapCard data={location} />
+            </StyledPop>
+        </Marker>
+      )}
+      
     </MapContainer>
   )
 }

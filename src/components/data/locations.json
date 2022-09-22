@@ -1,0 +1,58 @@
+[
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City",
+    "location": "Colorado",
+    "visited": "25k",
+    "lat": 37.5,
+    "lng": -100.0
+  },
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City 2",
+    "location": "Oklahoma",
+    "visited": "15k",
+    "lat": 36.084621,
+    "lng": -96.921387
+  },
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City 3",
+    "location": "South Dakota",
+    "visited": "21k",
+    "lat": 44.5,
+    "lng": -100.0
+  },
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City 4",
+    "location": "Tennessee",
+    "visited": "18k",
+    "lat": 35.860119,
+    "lng": -86.660156
+  },
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City 5",
+    "location": "Minnesota",
+    "visited": "23k",
+    "lat": 46.39241,
+    "lng": -94.63623
+  },
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City 6",
+    "location": "Indiana",
+    "visited": "11k",
+    "lat": 40.273502,
+    "lng": -86.126976
+  },
+  {
+    "image": "assets/images/11.jpg",
+    "name": "Dodge City 7",
+    "location": "Wyoming",
+    "visited": "11k",
+    "lat": 43.07597,
+    "lng": -107.290283
+  }
+]
